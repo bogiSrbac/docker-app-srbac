@@ -14,12 +14,12 @@ services:
       - ./app:/app
       - ./data/web:/vol/web
     environment:
-          - SECRET_KEY=devsecretkey
-          - DEBUG=1
-          - DB_HOST=db
-          - DB_NAME=devdb
-          - DB_USER=devuser
-          - DB_PASS=changeme
+      - SECRET_KEY=devsecretkey
+      - DEBUG=1
+      - DB_HOST=db
+      - DB_NAME=devdb
+      - DB_USER=devuser
+      - DB_PASS=changeme
     depends_on:
       - db
 
